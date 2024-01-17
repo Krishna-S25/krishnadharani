@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap'); 
+:root{
+    --yellow: #f9ca24;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; 
+    border:none;
+    text-transform: none;
+    transition: all .2s linear;
+}
+span{
+    color: darkorange ;
+    font-weight: 900;
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: bold;
+} 
+h6{
+    color: darkorange;
+    font-style: italic;
+}
+li{
+    font-size: 1rem;
+    justify-content:left;
+    
+}
+img{
+    height:17rem;
+    width:17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:.7rem solid var(--yellow);
+}
+p{
+    font-size: 1rem;
+    color: black;
+    justify-content:right;
+}
+
+
+.item1 { grid-area: header; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.item6 { grid-area: side; }
+.item7 { grid-area: left; }
+.item8 { grid-area: inherit; }
+.item9 { grid-area: unset; }
+.item10 { grid-area: initial; }
+
+.grid-container 
+{
+  display: grid;
+  grid-template-areas:
+    'menu header header header header header '
+    'main main main main right right'
+    'footer footer footer footer right right'
+    'left inherit initial unset side side';
+  grid-gap: 5px;
+  background-color:rgb(71, 199, 199);
+  color: #333;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.grid-container > div 
+{
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+    border-radius: 5px;
+  }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 5px;
+  }
